@@ -30,14 +30,14 @@ float f_crab;
 float f_mrk421;
 float f_mrk501;
 
-boolean rotate = false;
+boolean rotate = true;
 boolean send = false;
 
 /* Color */
-int bg_color = 255;
-int r = 0;
-int g = 0;
-int b = 0;
+int bg_color = 0;
+int r = 255;
+int g = 255;
+int b = 255;
 int opacity = 127;
 
 void setup() {
@@ -59,7 +59,7 @@ void setup() {
   flux_mrk501 = new int[flux_3];
   
   /* Start camera position */
-  cam = new PeasyCam(this, 0, 0, 0, 52-0); // camera pixel's away
+  cam = new PeasyCam(this, 0, 0, 0, 450); // camera pixel's away
   //cam.rotateX(300);
   //cam.rotateY(50);
   
@@ -230,7 +230,7 @@ void draw() {
           //println("source", i, "x=", v1.x, "y=", v1.y, "z=", v1.z);
           point(v1.x, v1.y, v1.z); 
         } else { //-------------------------------------------- Draw the rest of the sources
-          stroke(0, 0, 255);
+          stroke(255, 0, 0);
           strokeWeight(6);        
           point(v1.x, v1.y, v1.z);
           //println("source", i, "x=", v1.x, "y=", v1.y, "z=", v1.z);
