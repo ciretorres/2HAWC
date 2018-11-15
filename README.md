@@ -13,7 +13,7 @@ Este trabajo hace referencia a los siguientes repositorios:
 
 ## Python
 
-  * [datasets/catalogue/files/Hackaton2018.ipynb](datasets/catalogue/files/Hackaton2018.ipynb): Análisis de datos en python.
+  * [datasets/Hackaton2018.ipynb](datasets/Hackaton2018.ipynb): Análisis de datos en python.
 
 Algunos docs del módulo de astropy que se utilizaron:
 
