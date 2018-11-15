@@ -7,6 +7,8 @@ Este trabajo hace referencia a los siguientes repositorios:
 
 [Datasets](https://data.hawc-observatory.org/datasets.php): HAWC Observatory
 
+  * Mención a Emmanuel Anguiano-Hernández [mecanosaurio](https://github.com/mecanosaurio).
+
 ---
 
 ## Python
