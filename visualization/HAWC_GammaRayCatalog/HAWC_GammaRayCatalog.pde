@@ -1,7 +1,6 @@
 import peasy.*;
 import oscP5.*;
 import netP5.*;
-
 /*
  * Title: Hackatón 2018
  * Authors: Eric Torres, Emilio Ocelotl, Marianne Teixido, Rodrigo Treviño.
@@ -29,24 +28,31 @@ int flux_3 = 480;
 float f_crab;
 float f_mrk421;
 float f_mrk501;
+String typed = "";
+int frameratecounter = 2;
+int getal = 0;
 
 boolean rotate = true;
 boolean send = false;
 
 /* Color */
 int bg_color = 0;
-int r = 255;
-int g = 255;
+int r = 0;
+int g = 0;
 int b = 255;
 int opacity = 127;
 
 void setup() {
+  //size(displayWidth, displayHeight, P3D);
   size(600, 600, P3D);
+  textFont(createFont("Futura", 30));
+  textAlign(LEFT);
   colorMode(RGB);
   loadPixels();
   smooth();
   
-  /* Read CSV */
+
+  /* Read Databases CSV */
   String[] HAWC_2 = loadStrings("data/2HWC_modified-2.csv");
   String[] fluxlc_Crab = loadStrings("data/HAWC_fluxlc_Crab_.csv");
   String[] fluxlc_Mrk421 = loadStrings("data/HAWC_fluxlc_Mrk421_.csv");
@@ -57,12 +63,13 @@ void setup() {
   flux_crab = new int[flux_1];
   flux_mrk421 = new int[flux_2];
   flux_mrk501 = new int[flux_3];
-  
+
   /* Start camera position */
-  cam = new PeasyCam(this, 0, 0, 0, 450); // camera pixel's away
-  //cam.rotateX(300);
-  //cam.rotateY(50);
+  cam = new PeasyCam(this, 0, 0, 0, 500); // camera pixel's away
+  cam.setMinimumDistance(50);
+  cam.setMaximumDistance(500);
   
+  //cam.setRotations(,,);
 
   /* Start oscP5, listening for incoming messages at port 12000 */
   oscP5 = new OscP5(this, 12000);  
@@ -73,7 +80,7 @@ void setup() {
    * and the port of the remote location address are the same, hence you will
    * send messages back to this sketch.
    */
-  myRemoteLocation = new NetAddress("127.0.0.1",12000); // Local
+  myRemoteLocation = new NetAddress("127.0.0.1", 12000); // Local
   //myRemoteLocation = new NetAddress("192.168.1.100", 5612); // Emilio
 
   /* 
@@ -96,57 +103,53 @@ void setup() {
       //println("source", i, " RA=", row[3], "Dec=", row[4], '|', "x=", x, "y=", y, "z=", z);
     }
   }
-  println("loading... HAWC_fluxlc_Crab.CSV"); //---------------------------- FLUX CRAB
+  println("loading database... HAWC_fluxlc_Crab.CSV"); //---------------------------- FLUX CRAB
   for (int i = 1; i < fluxlc_Crab.length; i++) { // 473 rows length
     String[] row = split(fluxlc_Crab[i], ','); // Split CSV row by ','
     // Assign flux_crab    
     flux_crab[i] = int(float(row[1])*1000000*1000000);
     //println(i, flux_crab[i]);
   }
-  println("loading.. HAWC_fluxlc_Mrk421.CSV"); //-------------------------- FLUX MRK421
+  println("loading database... HAWC_fluxlc_Mrk421.CSV"); //-------------------------- FLUX MRK421
   for (int i = 1; i < fluxlc_Mrk421.length; i++) { // 472 rows length
     String[] row = split(fluxlc_Mrk421[i], ','); // Split CSV row by ','
     // Assign flux_mrk421    
-    flux_mrk421[i] = int(float(row[1])*10000000*1000000);
+    flux_mrk421[i] = int(float(row[1])*10000000*100000);
     //println(i, flux_mrk421[i]);
   }
-  println("loading... HAWC_fluxlc_Mrk501.CSV"); //-------------------------- FLUX MRK501
+  println("loading database... HAWC_fluxlc_Mrk501.CSV"); //-------------------------- FLUX MRK501
   for (int i = 1; i < fluxlc_Mrk501.length; i++) { // 480 rows length
     String[] row = split(fluxlc_Mrk501[i], ','); // Split CSV row by ','
     // Assign flux_mrk501    
     flux_mrk501[i] = int(float(row[1])*10000000*1000000);
     //println(i, flux_mrk501[i]);
   }
-  
-  //println("Crab Nebulae:", 20.5772, ",", 184.26, ",", 74.99995846026627); // Crab Nebulae
-  //println("Geminga:", ",", -26.6122, ",", 189.404, ",", 58.463658826701725); // Geminga 
-  //println("2HWC J0635+180:", -29.1991, ",", 187.899, ",", 30.989661262299755); //  2HWC J0635+180 
-  //println("Markarian 421:", -152.664, ",", 37.7438, ",", 123.56780557911655); // Markarian 421
-  //println("Markarian 501:", -43.7064, ",", -147.333, ",", 127.99485157236046); // Markarian 501
-  
+
+  println("\nCrab Nebulae:", 20.5772, ",", 184.26, ",", 74.99995846026627); // Crab Nebulae
+  println("Geminga:", ",", -26.6122, ",", 189.404, ",", 58.463658826701725); // Geminga 
+  println("2HWC J0635+180:", -29.1991, ",", 187.899, ",", 30.989661262299755); //  2HWC J0635+180 
+  println("Markarian 421:", -152.664, ",", 37.7438, ",", 123.56780557911655); // Markarian 421
+  println("Markarian 501:", -43.7064, ",", -147.333, ",", 127.99485157236046); // Markarian 501
 } //------------------------------------------------------------------------------------------------------ setup   
 
 void draw() {
   background(bg_color);
+  stroke(255, 0, 0);
+  fill(255, 255, 0);
+    
   noFill();
   stroke(r, g, b, opacity);
   strokeWeight(1);
   lights();
-  //translate(width/2, height/2);  
+  //translate(width/2, height/2);
   
-  
-  //rotateX(300);
-  //rotateY(-50);  
   /* Rotate camera */
-  if (rotate) {    
-    rotateX(count/200);
-    rotateY(count/200);
-    //rotateZ(count/200);
+  if (rotate) {
+    cam.setRotations(count/200, count/200, count/200);
     count++;
-  } else {
-    rotateX(count/200);
-    rotateY(count/200);
-  } //--------------------- Rotate camera
+  } else {    
+    cam.setRotations(count/200, count/200, count/200);
+  } //------------------------------------------------- Rotate camera
 
   /* 
    * Calculate 
@@ -164,12 +167,11 @@ void draw() {
       sphere[i][j] = new PVector(x, y, z);
       //println("vector", i,  j, " lat=", lat, "lon=", lon, '|', "x=", x, "y=", y, "z=", z);
     }
-  }  
-
+  } 
   /* 
    * Draw 
    * SPHERICAL SYSTEM
-   */
+   */  
   for (int i = 0; i < total; i++) {
     beginShape(LINES); //------------- RIGHT ASCENSION    
     for (int j = 0; j < total; j++) {           
@@ -193,51 +195,50 @@ void draw() {
     }
     endShape(CLOSE);
   } //------------------------------------ for
-  
+
   /* 
    * Draw 
    * GAMARAY SOURCES 
-   * – pulsar, super nebulae, source collision, galaxy centers –
+   * – pulsar, super nebulae, star collision, galaxy centers –
    */
   for (int i = 0; i < source.length; i++) {
     PVector v1 = source[i]; // PVector
-    // The Sun at the center in color white
-    stroke(0);
-    strokeWeight(10);
+    //----------------------------------------- The Sun at the center in color white
+    stroke(255, 255, 0);
+    strokeWeight(7);
     point(0, 0, 0); 
-    
-    if(i == 1){ //--------------------------------------------- Draw Crab Nebulae
+    if (i == 1) { //--------------------------------------------- Draw Crab Nebulae
       stroke(random(255), random(255), random(255));      
-      //strokeWeight(int(f_crab*1000));
+      //strokeWeight(int(f_crab*5000));
       strokeWeight(flux_crab[int(random(flux_crab.length))]);
       //println(flux_crab[j]);
       //println("source", i, "x=", v1.x, "y=", v1.y, "z=", v1.z);
-      point(v1.x, v1.y, v1.z); 
+      point(v1.x, v1.y, v1.z);
     } else {
-      if(i == 7){ //------------------------------------------- Draw Markarian 421
+      if (i == 7) { //------------------------------------------- Draw Markarian 421
         stroke(random(255), random(255), random(255));
-        //strokeWeight(int(f_mrk421*1000));
+        //strokeWeight(int(f_mrk421*5000));
         strokeWeight(flux_mrk421[int(random(flux_mrk421.length))]);
         //println(flux_mrk421[j]);
         //println("source", i, "x=", v1.x, "y=", v1.y, "z=", v1.z);
-        point(v1.x, v1.y, v1.z); 
+        point(v1.x, v1.y, v1.z);
       } else {
-        if(i == 9){ //----------------------------------------- Draw Markarian 501
+        if (i == 9) { //----------------------------------------- Draw Markarian 501
           stroke(random(255), random(255), random(255));
-          //strokeWeight(int(f_mrk501*1000));
+          //strokeWeight(int(f_mrk501*5000));
           strokeWeight(flux_mrk501[int(random(flux_mrk501.length))]);
           //println(flux_mrk501[j]);
           //println("source", i, "x=", v1.x, "y=", v1.y, "z=", v1.z);
-          point(v1.x, v1.y, v1.z); 
+          point(v1.x, v1.y, v1.z);
         } else { //-------------------------------------------- Draw the rest of the sources
-          stroke(255, 0, 0);
+          stroke(random(255), 0, 255);
           strokeWeight(6);        
           point(v1.x, v1.y, v1.z);
           //println("source", i, "x=", v1.x, "y=", v1.y, "z=", v1.z);
         }
       }
     }
-    // Draw the ray from the source
+    //--------- Draw the ray from the source (PENDING) ----------//
     stroke(random(255), random(255), random(255));
     strokeWeight(1);       
     line(0, 0, 0, 20.577173, 184.25957, 74.99996); // Crab
@@ -245,79 +246,83 @@ void draw() {
     line(0, 0, 0, -43.7064, -147.333, 127.99485157236046); // Markarian 501
   } //------------------------------------------------------------------ for
   
+  //------------------------------ Typed Interface
+  cam.beginHUD();
+  if (round(frameCount/30) % 2 == 0){
+    text(":"+typed, 5, 50);  
+  } else {
+    text(":"+typed+"_", 5, 50);   
+  }
+  cam.endHUD();
   
 } //------------------------------------------------------------------------------------------------------ draw
 
-void keyPressed() { 
-  if (key == 's') {
+void keyPressed() {  
+  if (keyCode == BACKSPACE) {
+    typed = "";
+  }
+  if (key == ENTER && typed.equals("osc")) {
     /* in the following different ways of creating osc messages are shown by example */
     OscMessage myMessage = new OscMessage("/fuente");    
-    myMessage.add(3); /* add an int to the osc message */  
+    myMessage.add(3); /* add an int to the osc message */
+
     /* send the message */
-    oscP5.send(myMessage, myRemoteLocation);   
+    oscP5.send(myMessage, myRemoteLocation);
   }
-  if (key == ENTER) {   
+  
+  if (key == ENTER && typed.equals("rotar")) {   
     rotate = !rotate;
-  }  
-  if (key == '1') { // Crab
-    cam.setDistance(0);  // distance from looked-at point
-    cam.rotateX(2.0725293);
-    cam.rotateY(-0.12412536);
-    cam.rotateZ(-0.1249869);    
-  } 
-  if (key == '2'){ // Mrk421
-    cam.setDistance(0);  // distance from looked-at point
-    cam.rotateX(2.8797612);
-    cam.rotateY(0.6057843);
-    cam.rotateZ(-0.89764327);    
   }
-  if (key == '3'){ // Mrk501
-    cam.setDistance(0);  // distance from looked-at point
-    cam.rotateX(-2.022194);
-    cam.rotateY(0.26438063);
-    cam.rotateZ(-0.019849041);
+  if (key == ENTER && (typed.equals("reset") || typed.equals("r"))) {
+    float[] r = cam.getRotations();    
+    //cam.setRotations(-r[0], -r[1], -r[2]);
+    cam.reset();  
   }
-  if (key == '4'){
-    cam.setDistance(450.0);  // distance from looked-at point
-  }  
-  if(key == '5'){
+  if (key == ENTER && typed.equals("dist 1")) {
+    cam.setDistance(75);
+  } else {
+    if (key == ENTER && typed.equals("dist 2")){
+      cam.setDistance(500);      
+    }
+  }
+  if (key == '5') {
     //print(cam.getDistance());
     float[] look = cam.getLookAt();
-    println("\nx:",look[0], "y:",look[1], "z:",look[2]);
-    float[] p = cam.getPosition();
-    println("x:", p[0], "y:", p[1],"distance:", p[2]);
+    println("\nlook_x:", look[0], "look_y:", look[1], "look_z:", look[2]);
+    float[] position;
+    position = cam.getPosition();
+    println("position_x:", position[0], "position_y:", position[1], "position_z:", position[2]);    
     float[] r = cam.getRotations();
-    println(r[0], r[1], r[2]);
+    println("rotation_x", r[0], "rotation_y", r[1], "rotation_z", r[2]);
     //cam.lookAt(20.577173, 184.25957, 74.99996, 100.0);
   }
-  //if (key == CODED){
-  //  if(keyCode == UP){
-  //    zoom = !zoom;
-  //  } else {
-  //    if(keyCode == DOWN){
-  //    zoom = !zoom;
-  //    }
-  //  }
-  //}
-  
+  if (key == CODED){
+    if(keyCode == UP){
+      
+    } else {
+      if(keyCode == DOWN){
+        
+      }
+    }
+  }
 } //------------------------------------------------------------------------------------------------------ keyPressed
 
 /* incoming osc message are forwarded to the oscEvent method. */
 void oscEvent(OscMessage theOscMessage) {
   /* parse theOscMessage and extract the values from the osc message arguments. */
-  if(theOscMessage.addrPattern().equals("/crabSend")){
+  if (theOscMessage.addrPattern().equals("/crabSend")) {
     f_crab = theOscMessage.get(0).floatValue();
     //println("### values from /crabSend pattern: "+f_crab);
   } else {
-    if(theOscMessage.addrPattern().equals("/mrk421Send")){
+    if (theOscMessage.addrPattern().equals("/mrk421Send")) {
       f_mrk421 = theOscMessage.get(0).floatValue();
       //println("### values from /mrk421Send pattern: "+f_mrk421);
-     } else {
-       if(theOscMessage.addrPattern().equals("/mrk501Send")){
-         f_mrk501 = theOscMessage.get(0).floatValue();
-         //println("### values from /mrk501Send pattern: "+f_mrk501);
-        }
-     }
+    } else {
+      if (theOscMessage.addrPattern().equals("/mrk501Send")) {
+        f_mrk501 = theOscMessage.get(0).floatValue();
+        //println("### values from /mrk501Send pattern: "+f_mrk501);
+      }
+    }
   }
   int firstValue = theOscMessage.get(0).intValue();
   println("\n### values from the osc message: "+firstValue);
@@ -328,3 +333,11 @@ void oscEvent(OscMessage theOscMessage) {
   println("### port: "+theOscMessage.port());
   println("### NetAddress: "+theOscMessage.netAddress());
 } //------------------------------------------------------------------------------------------------------ oscEvent
+void keyTyped() {
+  if (keyCode == RETURN) {
+    //NO HAGO NADA Y TERMINA
+    //Aquí podemos hacer las comparaciones con TYPED
+  } else {
+    typed += key;
+  }
+} //------------------------------------------------------------------------------------------------------ keyTyped
