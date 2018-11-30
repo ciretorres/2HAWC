@@ -51,12 +51,12 @@ void setup() {
   loadPixels();
   smooth();
   
-
   /* Read Databases CSV */
   String[] HAWC_2 = loadStrings("data/2HWC_modified-2.csv");
   String[] fluxlc_Crab = loadStrings("data/HAWC_fluxlc_Crab_.csv");
   String[] fluxlc_Mrk421 = loadStrings("data/HAWC_fluxlc_Mrk421_.csv");
   String[] fluxlc_Mrk501 = loadStrings("data/HAWC_fluxlc_Mrk501_.csv");
+  
   /* Initialize */
   sphere = new PVector[total+1][total+1];    
   source = new PVector[sources];
@@ -103,6 +103,7 @@ void setup() {
       //println("source", i, " RA=", row[3], "Dec=", row[4], '|', "x=", x, "y=", y, "z=", z);
     }
   }
+  
   println("loading database... HAWC_fluxlc_Crab.CSV"); //---------------------------- FLUX CRAB
   for (int i = 1; i < fluxlc_Crab.length; i++) { // 473 rows length
     String[] row = split(fluxlc_Crab[i], ','); // Split CSV row by ','
@@ -125,11 +126,11 @@ void setup() {
     //println(i, flux_mrk501[i]);
   }
 
-  println("\nCrab Nebulae:", 20.5772, ",", 184.26, ",", 74.99995846026627); // Crab Nebulae
-  println("Geminga:", ",", -26.6122, ",", 189.404, ",", 58.463658826701725); // Geminga 
-  println("2HWC J0635+180:", -29.1991, ",", 187.899, ",", 30.989661262299755); //  2HWC J0635+180 
-  println("Markarian 421:", -152.664, ",", 37.7438, ",", 123.56780557911655); // Markarian 421
-  println("Markarian 501:", -43.7064, ",", -147.333, ",", 127.99485157236046); // Markarian 501
+  println("\nCrab Nebulae| x:", 20.5772, ", y:", 184.26, ", z:", 74.99995846026627); // Crab Nebulae
+  println("Geminga| x:", -26.6122, ", y:", 189.404, ", z:", 58.463658826701725); // Geminga 
+  println("2HWC J0635+180| x:", -29.1991, ", y:", 187.899, ", z:", 30.989661262299755); //  2HWC J0635+180 
+  println("Markarian 421| x:", -152.664, ", y:", 37.7438, ", z:", 123.56780557911655); // Markarian 421
+  println("Markarian 501| x:", -43.7064, ", y:", -147.333, ", z:", 127.99485157236046); // Markarian 501
 } //------------------------------------------------------------------------------------------------------ setup   
 
 void draw() {
@@ -230,7 +231,7 @@ void draw() {
           //println(flux_mrk501[j]);
           //println("source", i, "x=", v1.x, "y=", v1.y, "z=", v1.z);
           point(v1.x, v1.y, v1.z);
-        } else { //-------------------------------------------- Draw the rest of the sources
+        } else { //-------------------------------------------- Draw the rest of the sources          
           stroke(random(255), 0, 255);
           strokeWeight(6);        
           point(v1.x, v1.y, v1.z);
@@ -241,7 +242,7 @@ void draw() {
     //--------- Draw the ray from the source (PENDING) ----------//
     stroke(random(255), random(255), random(255));
     strokeWeight(1);       
-    line(0, 0, 0, 20.577173, 184.25957, 74.99996); // Crab
+    line(0, 0, 0, 20.577173, 184.25957, 74.99996); // Crab Nebulae
     line(0, 0, 0, -152.664, 37.7438, 123.56780557911655); // Markarian 421
     line(0, 0, 0, -43.7064, -147.333, 127.99485157236046); // Markarian 501
   } //------------------------------------------------------------------ for

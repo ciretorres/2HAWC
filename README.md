@@ -1,9 +1,8 @@
-# The 2HWC HAWC OBSERVATORY GAMMA-RAY CATALOGUE
+# The 2HWC HAWC Observatory Gamma-Ray Catalogue
 
-![alt text](https://redlbc.files.wordpress.com/2016/02/hawc-nieve.jpg "hawc 1")
-![alt text](https://events.icecube.wisc.edu/conferenceDisplay.py/getPic?picId=4&confId=81 "hawc 2")
+<img src="./captures/hawc-nieve.jpg" width="800">
 
-This project makes reference to the next github repositories:
+This project does reference to the next github repositories:
 
   * [ofhawc](https://github.com/EmilioOcelotl/ofhawc) by Emilio Ocelotl.
   * [sc_hawc](https://github.com/marianneteixido/sc_hawc) by Marianne Teixido.
@@ -13,22 +12,38 @@ HAWC Observatory: [datasets](https://data.hawc-observatory.org/datasets.php)
   * Mention to Emmanuel Anguiano-Hernández [mecanosaurio](https://github.com/mecanosaurio).
 
 ---
+## Home
+- [Introduction](#Introduction)
+- [Reconstruction](#Reconstruction)
+- [Process](#Processes)
+- [Tools](#Tools)
+- [Python](#Python)
+- [Proccesing](#Processing)
+- [References](#References)
+
+---
+
 ## Introduction
 
-Each time of second, a certain gamma-ray particles that travels from the interstellar medium to the atmosphere of the earth, has been cascading our bodies. Perhaps, while we are reading this.
+Each time of second, a certain gamma-ray particles that travels from the interstellar medium to earth's atmosphere, has been cascading our bodies. Perhaps, while we are reading this.
 
-At the beginning, these particles comes mostly from cosmic-ray sources, like, supernovaes, pulsars, star collisions or galaxies' centers. When its hits in the atmosphere and interact with the atomic nuclei, elementary particles are produced, which turns it into more particles and generate a cascade effect. This showers of particles grows until all the energy of the original gamma-ray is totally used. You might imagine all this happening approximately at 10 km above sea level, and that could cover an area of even a 1,000 of square meters.
+At the beginning, these particles comes mostly from cosmic-ray sources, like; kilonovaes, pulsars, star collisions or galaxies' centers. When its hits in the atmosphere and interact with the atomic nuclei, elementary particles are produced, which turns it into more particles and generate a cascade effect. This showers of particles grows until all the energy of the original gamma-ray is totally used. You might imagine all this happening approximately at 10 km above sea level, and that could cover an area of even a 1,000 of square meters.
 
-So, The High-Altitude Water Cherenkov (HAWC) Gamma-Ray Observatory attends this wonderful research on the flanks of the Sierra Negra volcano on Pico de Orizaba's (Citlaltépetl) National Park near from the beautiful city of Puebla in México. It implements an 140x180m territorial area with 300 cylindrical modules of 7.3x4.5m filled with 200,000L of purified water and three floating photomultiplier tubes (PMT) each. 
+So, [The High-Altitude Water Cherenkov (HAWC) Gamma-Ray Observatory](https://www.hawc-observatory.org/) attends this wonderful research on the [flanks](https://goo.gl/maps/c28eBSnLGy92) of the Sierra Negra volcano on Pico de Orizaba's (Citlaltépetl) National Park near from the beautiful city of Puebla in México. It implements a 140x180m territorial area with 300 cylindrical modules of 7.3x4.5m filled with 200,000L of purified water and three floating photomultiplier tubes (PMT) each. 
 
-Now, When an elementary particle of the atmosphere cascade travels through the water, it produces a light pulse call Cherenkov radiation. This happens when charged electric particle travels faster than light in a medium like water. It is similar when at the poles of the amazed planets experiences the aurora borealis, because of the protection roll of the atmosphere from the higher levels of gamma-ray or radiation.
+Now, When an elementary particle of the atmosphere cascade travels through the water, it produces a light pulse call Cherenkov radiation. This happens when charged electric particle travels faster than light in a medium like water. It is similar when at the poles of the planets experiences the auroras borealis or autralis, because of the protection role of the atmosphere from the higher levels of gamma-ray or radiation.
 
-Thereby, the light pulses are detected by the photocathode material of the PMT which converts and multiply the signal from the photon particle into many electrons that sends an electricmagnetic pulse to 1,200 channels from 120 front-end boards to process those into interpretable datasets and store onto tabular representations with the information about arrive time and cascade's size.
+<img src="./captures/http%3A%2F%2Fwww.esacademic.com%2Fpictures%2Feswiki%2F80%2FPolarlicht_2.jpg" width="800">
+
+Thereby, the light pulses are detected by the photocathode material of the PMT which converts and multiply the signal from the photon particle into many electrons that sends an electricmagnetic pulse to 1,200 channels from 120 front-end boards in the observatory to process those into interpretable datasets and store onto tabular representations with the information about arrive time and cascade's size.
 
 Finally, through this information and the data from the 2HWC HAWC Observatory Gamma-Ray Catalogue, we intented to figure out its dimension from its domain to synthesize a qualitive form, that could reveals and amplify cognitive structures of cosmic ray's spectrum into an inferencial patterns system, which allows to reconstruct the direction from the original gamma-ray source and estimates its energy, through a based-computer simulation that visualize and sonorize its nature.
 
+- [Home](#Home)
+
 ---
-## Reconstruction of the phenomena: a live code visualization & sonirization
+## Reconstruction
+### : a live code visualization & sonorization
 
 For the reconstructions, we wanna answer some of these questions:
   * From where the Gamma-Ray came from?
@@ -40,44 +55,130 @@ For the reconstructions, we wanna answer some of these questions:
 
 Also we are interested in explore the quantities of time from the cascade particles events of Gamma-Ray that allow us to infer the reconstruction of the trajectory angle.
 
-The pictorical representation of the 39 Gamma-Ray sources from the second HAWC Observatory Catalogue mapped into a 3D computer-based spherical coordinates system, might hope been integrate in the future, as many as possible, with mostly all of the aspects from the phenoma, like in a quantum resolution perhaps, with the work developed in the Astronomic Hackatón 2018 with UNAM's Astronomy Institute, Dr. Magda González, Sergio Hernández, and the founders of the summon Carles Tardío, Rodrigo Treviño, Leslie García and everyone who were involved in the support of the project.
+The pictorical representation of the 39 Gamma-Ray sources from the second HAWC Observatory Catalogue mapped into a 3D computer-based spherical coordinates system, might hope been integrate in the future, as many as possible, with mostly all of the aspects from the phenoma, like in a quantum resolution perhaps, with the work developed in the Astronomic Hackatón 2018 with [UNAM's Astronomy Institute](http://www.astroscu.unam.mx/IA/index.php?lang=es), Dr. Magda González, Sergio Hernández, and the founders of the summon Carles Tardío, Rodrigo Treviño, Leslie García and everyone who were involved in the support of the project.
 
-### The Processes
+- [Home](#Home)
 
-The process that describes the implementation of the prototypings starts as follows:
+### Processes
 
-For firstness, we were summoned by Art, Science, and Technology's (ACT) program in the wild México City to attend a series of talks and workshops in the Astronomy Institute headquarters in UNAM during the 6th, 7th and 8th of november from 10-14h and from 16-18h. 
-<img src="./captures/IMG_4387.jpg">
+The process which describes the implementation of the prototypings starts as follows:
 
-We were introduced to the observatory and physics foundations with talk from Dr. Magda González about Cosmic ray as a messengers from the universe to adapt our thoughts to the language of the domain. 
-<img src="./captures/IMG_4388.jpg">
+In the first day, we were summoned by [Art, Science, and Technology's (ACT)](http://artecienciaytecnologias.mx/) program in the wild México City to attend a series of talks and workshops in the Astronomy Institute headquarters in UNAM during the 6th, 7th and 8th of november from 10-14h and from 16-18h. 
 
-Most of chemical elements that represent Mendeleev's periodic table comes from out of the earth, in fact; certain elements have been produce from the human being. So we ask ourselfs, from where the hell comes all the matter?!
-<img src="./captures/IMG_4390.jpg">
+<img src="./captures/IMG_4387.jpg" width="800">
 
-It looks likes that the fundamental particles, in a modern vision, like quarks, electrons, neutrinos, muons or taus where ionized during the cooling and the acecelerate expanse of the universe since the Big bang. Once this particles became with a more complex structure, because of the gravity, the temperature and many other stuff, the firsts stars and galaxies started to bright.
-<img src="./captures/IMG_4391.jpg">
+We were introduced to the observatory, and physics foundations with a talk from Dr. Magda González about Cosmic ray as a messengers from the universe, to adapt our thoughts to the domain language. 
 
-After that, in a laboratory they explained us how does it work, in general, the electronic system in the HAWC's Observatory. The interested part, from my point of view, is when the Cherenvok effect lights the material photocathode in the tubes to photomultiply it into many electrons and send the signal to the engineering mechanisim, when front-end board recieve this pulse and translate it to a bit code and then process it, with another machines-levels, to get the data in natural language.
-<img src="./captures/IMG_4402.jpg">
+<img src="./captures/IMG_4388.jpg" width="800">
 
-Then, we were on an underground laboratory where they shows us the quality main process of the purify water from the modules with a lasser passing through a tube filled with dirty water.
-<img src="./captures/IMG_4408.jpg">
+Most of chemical elements that represent Mendeleev's periodic table comes from out of the earth, in fact; certain elements have been produce from the human being activity. So we ask ourselfs, from where the hell comes all the matter?!
 
-At the end of the first day, we had a nice exploration of the first Data Sets with Sergio Hernández, whom allow us to read each parameter from its. Like the 39 Gamma-Ray sources which allow them to plot the sky or the maps from the observation significance of each source or the lightcurves from Crab Nebulae, Markarian 421, and Markarian 501 from about 17 months of measuring.
-<img src="./captures/IMG_4414.jpg">
+<img src="./captures/IMG_4390.jpg" width="800">
 
-The format of the data files is very important for the implementation of the project. In this case, the second catalogue were in .XML, but Sergio provided us a program to convert it to .CSV with python. The lightcurves were in .DAT so with a little help with my friend Emmanuel, we could solve the problem to reconstruct the data in readable format for the environments we are gonna use. But there was a interested fact in the variables of this set, that Sergio helped us with the dates in which the flow started to record and it finished by converting the Modified Julian's Calendar to  Gregorian's Calendar with some tricks with the Astropy.time module. Now, were ready to ping some ideas with the community!
-<img src="./captures/IMG_4420.jpg">
+In a modern vision way, it looks likes that the fundamental particles, like quarks, electrons, neutrinos, muons, taus where ionized during the cooling and the acecelerate expanse of the universe since the Big bang. Once this particles became with a more complex structure, because of the gravity, the temperature and many other stuff, the firsts stars and galaxies started to bright.
 
-Finally, the mentors assigned to the mission presented their portfolios with conceptual tools from programming languages like SuperCollider, Pure Data, VVVV, OpenFrameworks and Processing, which it is intended to specify theses aspects forward.
+<img src="./captures/IMG_4391.jpg" width="800">
 
-For secondness, 
+After that, inside a laboratory they explained us how does it work, in general, the electronic system of the HAWC's Observatory. The most interest part, from my point of view, is when the Cherenkov's effect lights the photocathode in the tubes to photomultiply it into many electrons and send a signal to the engineering mechanisim where a front-end board recieve this pulse and translate it into bitcode, and then process it, with another machines-levels, to get the data in natural language.
+
+<img src="./captures/IMG_4402.jpg" width="800">
+
+Then, we were on an underground laboratory where they showed us the purified quality water process of the modules with a lasser passing through a tube filled with dirty water.
+
+<img src="./captures/IMG_4408.jpg" width="800">
+
+At the end of the day, we had a nice exploration of the first Data Sets with Sergio Hernández, whom facilitated us to read each of the sets' parameters. For example, the 39 Gamma-Ray sources which allow them to plot the sky or the maps from the observation significance of each source or the lightcurves from Crab Nebulae, Markarian 421, and Markarian 501 from about 17 measuring months.
+
+<img src="./captures/IMG_4414.jpg" width="800">
+
+The format of the data files is very important for the implementation of the project. In this case, the second catalogue is in .xml, but Sergio provided us a program to convert it to .csv with python. The lightcurves are in .dat so with a little help from my friend Emmanuel, we could solved the problem to reconstruct the data in readable format for the environments that we were used. There was a interested fact in the variables of this set, that Sergio helped us with the dates in which the flow started to record and it finished by converting the Modified Julian's Calendar to Gregorian's Calendar with some tricks from the Astropy.time module. Now, we were ready to ping some ideas with the community!
+
+<img src="./captures/IMG_4420.jpg" width="800">
+
+Finally, the mentors assigned to the mission presented their portfolios with conceptual tools from programming languages like SuperCollider, Pure Data, VVVV, OpenFrameworks and Processing, which it is intended to specify this aspects forward.
+
+In the second day, we started in the cafeteria 2nd floor's Astronomy Institute to share some ideas with different points of view for what is supposted to be the final reconstruction from what we heard and felt previously. As a group, whom starts a problem since the begining, we decided to present it for the Stars' night international festival for the 17th of november in differents resolutions or scales: as a main in the interstellar medium, as a pre cascade in the earth's atmosphere and post cascade in the HAWC Observatory, and as a particular periodistic way. 
+
+<img src="./captures/IMG_4432.jpg" width="800">
+
+In this photo my name appear with 'k' instead of 'c' and with '?', because at that time of the day I had to leave early the meeting. But definitely, I was agree with the idea about mapping the 39 gamma-ray sources using the galactic coordinates from the catalogue, because I decided to share with the community a sketch in which I'm recenlty working for my master's degree. And also, I was interested in the work proposed by Emilio and Marianne, about sending values through an Open Sound Control (OSC) Protocol cause it were a nice solution to integrate the work of everybody in a single presentation.
+
+<img src="./captures/pizarron.jpeg" width="800">
+
+In the third day, we were ready to begin to sinthetyze the data. So at next, I propose a guide which could probably help or agile the winnings for the project:
+
+    1. Check the database.
+
+        1.1. Determine which variables from the tabular representation we wanna use, why we are gonna used them and what is the purpose of it. 
+        The data is recolected from the electromagnetic pulse which sends the PMT floating in every single one of the modules.
+
+            1.1.1. Pictorical and sound variables for the representation:
+
+                - Name of the celestial source.
+                - Galactical, ecuatorial and spherical coordinates.
+                - Distance of the object in parsecs.
+                - The transitory amplititude from the fluxtuation of the Crab Nebulae, Markarian 421, Markarian 501.
+                - Position of the camera inside the simulation.
+    
+    2. Matrix data process.
+    
+        2.1  Calculate cartesian coordinates to spherical for plotting a spheric radius.
+        
+<img src="./captures/code_1.png" width="800">
+        
+        2.2  Convert ecuatorial coords to spherical for positioning the 39 gamma-ray sources.
+        Here, I had the opportunity to reach Carles and Sergio knowledge by explaining the idea of galactical  coordinates and how to transformed them with again some tricks from Astropy module.
+
+<img src="./captures/IMG_4447.jpg" width="800">
+<img src="./captures/code_module.png" width="800">
+<img src="./captures/code_2.2.png" width="800">
+
+        2.3  Reconstruct the tabular representation from the lightcurves in .dat and export it to .csv.
+
+<img src="./captures/code_3.png" width="800">
+
+        2.4  Parse all the datasets with every tool (SuperCollider, Processing, OpenFrameworks).
+
+<img src="./captures/code_4.png" width="800">
+<img src="./captures/code_5.png" width="800">
+<img src="./captures/code_6.png" width="800">
+
+    3. Paint or graphic from the data.
+
+        3.1 Plot a 3D sphere with Processing or OpenFrameworks.
+
+<img src="./captures/code_7.png" width="800">
+
+        3.2 Position the 39 gamma-ray sources in the sphere.
+
+<img src="./captures/code_8.png" width="800">
+
+        3.3 Model the sources with the transitory flux amplitude.
+
+<img src="./captures/code_9.png" width="800">
+
+        3.4 Represent a gamma-ray sended from Crab Nebulae (pending).
+
+<img src="./captures/code_10.png" width="800">
+
+    4. Implement OSC Protocol for the strokeWeight from SuperCollider.
+
+<img src="./captures/">
+
+    5. Implement an Interactive User-Interfaced to control the exploration of the visualization (pending).
+
+<img src="./captures/">
+
+- [Home](#Home)
 
 ### Tools
 
 There were certain suggested technology tools to handle the challenge for this project. Meanwhile, some were interested in visualize the phenomena, some were interested in sonorize it too. So at the moment, I decided to use a graphic library based on Java in a programming environment call Processing, and a matrix processor environment based on Python language call Jupyter Lab.
 
+- [Home](#Home)
+
+---
+![alt text](https://events.icecube.wisc.edu/conferenceDisplay.py/getPic?picId=4&confId=81 "hawc 2")
 ---
 
 ## Python
@@ -89,6 +190,9 @@ Some docs from Astropy module that were used:
   * [astropy.coordinates](http://docs.astropy.org/en/stable/coordinates/index.html)
   * [astropy.time](http://docs.astropy.org/en/stable/time/index.html)
   * [astropy.io.fits](http://docs.astropy.org/en/stable/io/fits/)
+
+
+- [Home](#Home)
 
 ---
 
@@ -117,10 +221,23 @@ Then comment and uncomment the next lines in the Processing code:
 
 Now, you can run the app while SuperCollider is running too!
 
+- [Home](#Home)
+
 ---
 ### References
 
 https://es.wikipedia.org/wiki/Fotomultiplicador
+
 http://artecienciaytecnologias.mx/
+
 https://www.hawc-observatory.org/
+
 https://historiaybiografias.com/calendario/
+
+https://www.nochedelasestrellas.org.mx/
+
+http://opensoundcontrol.org/
+
+http://www.astroscu.unam.mx/IA/index.php?lang=es
+
+- [Home](#Home)
