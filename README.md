@@ -33,11 +33,11 @@ HAWC Observatory: [datasets](https://data.hawc-observatory.org/datasets.php)
 Each time of second, a certain gamma-ray particles that travels from the interstellar medium to earth's atmosphere, has been cascading our bodies. Perhaps, while we are reading this.  
 At the beginning, these particles comes mostly from cosmic-ray sources, like; kilonovaes, pulsars, star collisions or galaxies' centers. When its hits in the atmosphere and interact with the atomic nuclei, elementary particles are produced, which turns it into more particles and generate a cascade effect. This showers of particles grows until all the energy of the original gamma-ray is totally used. You might imagine all this happening approximately at 10 km above sea level, and that could cover an area of even a 1,000 of square meters.  
 So, [The High-Altitude Water Cherenkov (HAWC) Gamma-Ray Observatory](https://www.hawc-observatory.org/) attends this wonderful research on the [flanks](https://goo.gl/maps/c28eBSnLGy92) of the Sierra Negra volcano on Pico de Orizaba's (Citlaltépetl) National Park near from the beautiful city of Puebla in México. It implements a 140x180m territorial area with 300 cylindrical modules of 7.3x4.5m filled with 200,000L of purified water and three floating photomultiplier tubes (PMT) each.  
-Now, When an elementary particle of the atmosphere cascade travels through the water, it produces a light pulse call Cherenkov radiation. This happens when charged electric particle travels faster than light in a medium like water. It is similar when at the poles of the planets experiences the auroras borealis or autralis, because of the protection role of the atmosphere from the higher levels of gamma-ray or radiation.
+Now, when an elementary particle of the atmosphere cascade travels through the water, it produces a light pulse call _Cherenkov radiation_. This happens when an electric charged particle travels faster than light in a medium like water. It is similar when at the poles of the planets experiences the auroras borealis or autralis, because of the protection role of the atmosphere from the higher levels of gamma-ray or radiation.
 
 <img src="./captures/Polarlicht_2.jpg" width="900">
 
-Thereby, the light pulses are detected by the photocathode material of the PMT which converts and multiply the signal from the photon particle into many electrons that sends an electricmagnetic pulse to 1,200 channels from 120 front-end boards in the observatory to process those into interpretable datasets and store onto tabular representations with the information about arrive time and cascade's size.  
+Thereby, the light pulses are detected by the photocathode material of the PMT which converts and multiply the signal from the photon particle into many electrons that sends an electrocmagnetic pulse to 1,200 channels from 120 front-end boards in the observatory to process those into interpretable datasets and store onto tabular representations with the information about arrive time and cascade's size.  
 Finally, through this information and the data from the 2HWC HAWC Observatory Gamma-Ray Catalogue, we intented to figure out its dimension from its domain to synthesize a qualitive form, that could reveals and amplify cognitive structures of cosmic ray's spectrum into an inferencial patterns system, which allows to reconstruct the direction from the original gamma-ray source and estimates its energy, through a based-computer simulation that visualize and sonorize its nature.
 
 [Go up](#Home)
@@ -54,7 +54,7 @@ For the pictorical and sound reconstructions of the phenomena, we wanna answer s
   * How does this information is create in the machine-system?
   * What is the sound representation of all this?
 
-Also we are interested in explore the quantities of time from the cascade particles events of Gamma-Ray that allow us to infer the reconstruction of the trajectory angle.
+Also we are interested in explore the quantities of time in nanoseconds (ns) from the cascade particles events of Gamma-Ray that allow us to infer the reconstruction of the trajectory angle.
 
 The pictorical representation of the 39 Gamma-Ray sources from the 2nd HAWC Observatory Catalogue mapped into a 3D computer-based spherical coordinates system, might hope been integrate in the future, as many as possible, with mostly all of the aspects from the phenoma, like in a quantum resolution perhaps, with the work developed in the Astronomic Hackatón 2018 with [UNAM's Astronomy Institute](http://www.astroscu.unam.mx/IA/index.php?lang=es), Dr. Magda González, Sergio Hernández, and the founders of the summon Carles Tardío, Rodrigo Treviño, Leslie García and everyone who were involved in the support of the project.
 
@@ -66,7 +66,7 @@ The pictorical representation of the 39 Gamma-Ray sources from the 2nd HAWC Obse
 
 The process which describes the implementation of the prototypings starts as follows:
 
-In the first day, we were summoned by [Art, Science, and Technology's (ACT)](http://artecienciaytecnologias.mx/) program in the wild México City to attend a series of talks and workshops in the Astronomy Institute headquarters in UNAM during the 6th, 7th and 8th of november from 10-14h and from 16-18h.  
+In the first day, we were summoned by [Art, Science, and Technology's (ACT)](http://artecienciaytecnologias.mx/) program in the wild México City to attend a series of talks and workshops at UNAM's Astronomy Institute headquarters during the 6th, 7th, and 8th of november from 10-14h and from 16-18h.  
 We were introduced to the observatory, and physics foundations with a talk from Dr. Magda González about _Cosmic ray as a messengers from the universe_, to adapt our thoughts to the domain language.  
 Most of chemical elements that represent Mendeleev's periodic table comes from out of the earth, in fact; certain elements have been produce from the human being activity. So we ask ourselfs, from where the hell comes all the matter?!
 
@@ -74,11 +74,11 @@ Most of chemical elements that represent Mendeleev's periodic table comes from o
 | :-------------: |:-------------:| :-----:|
 | <img src="./captures/IMG_4387.jpg" width="285"> | <img src="./captures/IMG_4388.jpg" width="285"> | <img src="./captures/IMG_4390.jpg" width="285"> |
 
-In a modern vision way, it looks likes that the fundamental particles, like quarks, electrons, neutrinos, muons, taus where ionized during the cooling and the acecelerate expanse of the universe since the Big bang. Once this particles became with a more complex structure, because of the gravity, the temperature and many other stuff, the firsts stars and galaxies started to bright.
+In a modern vision way, it looks likes that the fundamental particles, like quarks, electrons, neutrinos, muons, taus where ionized during the cooling and the acecelerate expanse of the universe since the Big bang. Once this particles became with a more complex structure, because of the gravity, the temperature and many other stuff, the first stars and galaxies started to bright.
 
 <img src="./captures/IMG_4391.jpg" width="900">
 
-After that, inside a laboratory they explained us how does it work, in general, the electronic system of the HAWC's Observatory. The most interest part, from my point of view, is when the Cherenkov's effect lights the photocathode in the tubes to photomultiply it into many electrons and send a signal to the engineering mechanisim where a front-end board recieve this pulse and translate it into bitcode, and then process it, with another machines-levels, to get the data in natural language.  
+After that, inside a laboratory they explained us how does it work, in general, the electronic system of the HAWC's Observatory. The most interest part, from my point of view, is when the Cherenkov's effect lights the photocathode in the tubes to photomultiply it into many electrons and send a signal to the engineering mechanisim where a front-end board recieve this pulse and translate it into bitcode, and then process it, with another machines-levels, to get the data in a natural language.  
 
 |||||
 |:---:|:---:|:---:|:---:|
@@ -91,7 +91,8 @@ Then, we were on an underground laboratory where they showed us the purified qua
 | <img src="./captures/IMG_4406.jpg" width="285"> | <img src="./captures/IMG_4411.jpg" width="285"> | <img src="./captures/IMG_4408.jpg" width="285"> |
 
 At the end of the day, we had a nice exploration of the first Data Sets with Sergio Hernández, whom facilitated us to read each of the sets' parameters. For example, the 39 Gamma-Ray sources which allow them to plot the sky or the maps from the observation significance of each source or the lightcurves from Crab Nebulae, Markarian 421, and Markarian 501 from about 17 measuring months.  
-The format of the data files is very important for the implementation of the project. In this case, the second catalogue is in .xml, but Sergio provided us a program to convert it to .csv with python. The lightcurves are in .dat so with a little help from my friend Emmanuel, we could solved the problem to reconstruct the data in readable format for the environments that we were used. There was a interested fact in the variables of this set, that Sergio helped us with the dates in which the flow started to record and it finished by converting the Modified Julian's Calendar to Gregorian's Calendar with some tricks from the Astropy.time module. Now, we were ready to ping some ideas with the community!  
+
+The format of the data files is very important for the implementation of the project. In this case, the second catalogue is in `.xml`, but Sergio provided us a program to convert it to `.cs` with python. The lightcurves are in `.dat` so with a little help from my friend Emmanuel, we could solved the problem to reconstruct the data in a readable format for the environments that we were used. There was a interested fact in the variables of this set, that Sergio helped us with the dates in which the flowing started and finished flow was recorded by converting the Modified Julian's Calendar to Gregorian's Calendar with some tricks from the Astropy.time module. **Now, we were ready to ping some ideas with the community!**
 
 ||||
 |:---:|:---:|:---:|
@@ -101,13 +102,13 @@ Finally, the mentors assigned to the mission presented their portfolios with con
 
 ---
 
-In the second day, we started in the cafeteria 2nd floor's Astronomy Institute to share some ideas with different points of view for what is supposted to be the final reconstruction from what we heard and felt previously. As a group, whom starts a problem since the begining, we decided to present it for the Stars' night international festival for the 17th of november in differents resolutions or scales: as a main in the interstellar medium, as a pre cascade in the earth's atmosphere and post cascade in the HAWC Observatory, and as a particular periodistic way.  
+In the second day, we started in the cafeteria's 2nd floor in the Astronomy Institute to share some ideas with different points of view for what is supposted to be the final reconstruction from what we heard and felt previously. As a group, whom starts a problem since the beginning, we decided to present it for the International Night's Stars Festival on 17th of november in differents resolutions or scales: as a main in the interstellar medium, as a pre cascade in the earth's atmosphere and post cascade in the HAWC Observatory, and as a particular periodistic way.  
 
 ||||
 |:---:|:---:|:---:|
 | <img src="./captures/IMG_4432.jpg" width="285"> | <img src="./captures/IMG_4428.jpg" width="285"> | <img src="./captures/IMG_4433.jpg" width="285"> |
 
-In this photo my name appear with 'k' instead of 'c' and with '?', because at that time of the day I had to leave early the meeting. But definitely, I was agree with the idea about mapping the 39 gamma-ray sources using the galactic coordinates from the catalogue, because I decided to share with the community a sketch in which I'm recenlty working for my master's degree. And also, I was interested in the work proposed by Emilio and Marianne, about sending values through an Open Sound Control (OSC) Protocol cause it were a nice solution to integrate the work of everybody in a single presentation.
+In this photo my name appear with 'k' instead of 'c' and with '?', because at that time of the day I had to leave early the meeting. But definitely, I was agree with the idea about mapping the 39 gamma-ray sources using the galactical coordinates from the catalogue, because I decided to share with the community a sketch in which I'm recenlty working for my master's degree. And also, I was interested in the work proposed by Emilio and Marianne, about sending values through an Open Sound Control (OSC) Protocol cause it is a nice solution to integrate the work of everybody in a single presentation.
 
 <img src="./captures/pizarron.jpeg" width="900">
 
@@ -117,7 +118,8 @@ In this photo my name appear with 'k' instead of 'c' and with '?', because at th
 
 ### Methodology
 
-In the third day, we were ready to begin to sinthetyze the data. 
+In the third day, we were ready to begin to sinthetyze the data. But at first, we need to realized some finals details about the sequence of time in which the cascade takes roll in every module of the observatory. That why, Sergio share with us a model that reconstructs the events in a longer scale of time.  
+After that, we had the chance to chill out a little bit with pizza from the hostest Carles, Leslie, and Rodrigo.
 
 <img src="./captures/IMG_4437.jpg" width="900">
 
@@ -141,7 +143,7 @@ So at next, I propose a guide which could probably help or agile the winnings fo
 
 #### 2. Matrix data process.
     
-#### 2.1. Calculate cartesian coordinates to spherical for plotting a spheric radius.
+#### 2.1. Calculate cartesian coordinates to spherical coordinates for plotting a spheric radius.
         
 <img src="./captures/code_1.png" width="900">
         
@@ -283,7 +285,7 @@ void oscEvent(OscMessage theOscMessage) {
 } //------------------------------------------------------------------------------------------------------ oscEvent
 ```
 
-|a|b|
+|||
 |:---:|:---:|
 |<img src="./captures/IMG_4453.jpg" width="540">|<img src="./captures/IMG_4459.jpg" width="310">|
 
@@ -305,6 +307,9 @@ There were certain suggested technology tools to handle the challenge for this p
 
 ### Essay
 
+The essay took place at _Los catorce 14_ two days before the presentation. We had the chance to critize our prototypes with a video projector and sound system. Just to get in touch with the rest of the work and how we are gonna organize the whole performance.  
+One of the ideas that I took from Emilio and Marianne, was about the experience they have to get in mind all the needs, requirements, and all the equipment to be move from our places to the forum or stage. It was a quite single!
+
 <img src="./captures/IMG_4465.jpg" width="900">
 <img src="./captures/IMG_4470.jpg" width="900">
 
@@ -313,6 +318,8 @@ There were certain suggested technology tools to handle the challenge for this p
 ---
 
 ### Presentation
+
+It was the day! Team decided to test some specific aspects for live coding performance to have it ready at time. The presentation took place at _Las Islas_ in Ciudad Universitaria (UNAM) at 18h beside the main stage. It were a nnice weather, and the crow were satisficied!
 
 <img src="./captures/IMG_4475.jpg" width="900">
 
@@ -386,6 +393,16 @@ http://opensoundcontrol.org/
 http://www.astroscu.unam.mx/IA/index.php?lang=es
 
 https://processing.org/
+
+https://en.wikipedia.org/wiki/Cherenkov_radiation
+
+[Hernández, Sergio. (2018). El Observatorio HAWC. Intituto de Física, UNAM: México.](https://github.com/ciretorres/2HAWC/blob/master/articles/Hernandez%20S_El%20Observatorio%20HAWC.pdf)
+
+[Hernández, Sergio. Data Sets I](https://github.com/ciretorres/2HAWC/blob/master/articles/Hernandez%20S_Data%20sets%20I.pdf)
+
+[Abeysekara et al. (2017). The 2HWC HAWC Observatory Gamma-Ray Catalogue. The Astrophysical Journal, 843:40 (21pp): México. ](https://doi.org/10.3847/1538-4357/aa7556)
+
+[Abeysekara et al. (). Very-high-energy particle acceleration powered by the jets of the microquasar SS 433. Springer Nature Limited: USA](https://doi.org/10.1038/s41586-018-0565-5)
 
 [Go up](#Home)
 
