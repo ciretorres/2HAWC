@@ -74,41 +74,38 @@ Most of chemical elements that represent Mendeleev's periodic table comes from o
 | :-------------: |:-------------:| :-----:|
 | <img src="./captures/IMG_4387.jpg" width="285">     | <img src="./captures/IMG_4388.jpg" width="285"> | <img src="./captures/IMG_4390.jpg" width="285"> |
 
----
-
 In a modern vision way, it looks likes that the fundamental particles, like quarks, electrons, neutrinos, muons, taus where ionized during the cooling and the acecelerate expanse of the universe since the Big bang. Once this particles became with a more complex structure, because of the gravity, the temperature and many other stuff, the firsts stars and galaxies started to bright.
 
 <img src="./captures/IMG_4391.jpg" width="900">
 
 After that, inside a laboratory they explained us how does it work, in general, the electronic system of the HAWC's Observatory. The most interest part, from my point of view, is when the Cherenkov's effect lights the photocathode in the tubes to photomultiply it into many electrons and send a signal to the engineering mechanisim where a front-end board recieve this pulse and translate it into bitcode, and then process it, with another machines-levels, to get the data in natural language.
 
-<img src="./captures/IMG_4397.jpg" width="270">
-<img src="./captures/IMG_4398.jpg" width="270">
-<img src="./captures/IMG_4402.jpg" width="150">
-<img src="./captures/IMG_4400.jpg" width="150">
+|||||
+|:---:|:---:|:---:|:---:|
+|<img src="./captures/IMG_4397.jpg" width="270">|<img src="./captures/IMG_4398.jpg" width="270">|<img src="./captures/IMG_4402.jpg" width="150">|<img src="./captures/IMG_4400.jpg" width="150">|
 
 Then, we were on an underground laboratory where they showed us the purified quality water process of the modules with a lasser passing through a tube filled with dirty water.
 
-<img src="./captures/IMG_4406.jpg" width="285">
-<img src="./captures/IMG_4411.jpg" width="285">
-<img src="./captures/IMG_4408.jpg" width="285">
+||||
+|:---:|:---:|:---:|:---:|
+|<img src="./captures/IMG_4406.jpg" width="285">|<img src="./captures/IMG_4411.jpg" width="285">|<img src="./captures/IMG_4408.jpg" width="285">|
 
-At the end of the day, we had a nice exploration of the first Data Sets with Sergio Hernández, whom facilitated us to read each of the sets' parameters. For example, the 39 Gamma-Ray sources which allow them to plot the sky or the maps from the observation significance of each source or the lightcurves from Crab Nebulae, Markarian 421, and Markarian 501 from about 17 measuring months.
-
+At the end of the day, we had a nice exploration of the first Data Sets with Sergio Hernández, whom facilitated us to read each of the sets' parameters. For example, the 39 Gamma-Ray sources which allow them to plot the sky or the maps from the observation significance of each source or the lightcurves from Crab Nebulae, Markarian 421, and Markarian 501 from about 17 measuring months.  
 The format of the data files is very important for the implementation of the project. In this case, the second catalogue is in .xml, but Sergio provided us a program to convert it to .csv with python. The lightcurves are in .dat so with a little help from my friend Emmanuel, we could solved the problem to reconstruct the data in readable format for the environments that we were used. There was a interested fact in the variables of this set, that Sergio helped us with the dates in which the flow started to record and it finished by converting the Modified Julian's Calendar to Gregorian's Calendar with some tricks from the Astropy.time module. Now, we were ready to ping some ideas with the community!
 
-<img src="./captures/IMG_4414.jpg" width="285">
-<img src="./captures/IMG_4416.jpg" width="285">
-<img src="./captures/IMG_4420.jpg" width="285">
+||||
+|:---:|:---:|:---:|:---:|
+|<img src="./captures/IMG_4414.jpg" width="285">|<img src="./captures/IMG_4416.jpg" width="285">|<img src="./captures/IMG_4420.jpg" width="285">|
 
 Finally, the mentors assigned to the mission presented their portfolios with conceptual tools from programming languages like SuperCollider, Pure Data, VVVV, OpenFrameworks and Processing, which it is intended to specify this aspects forward.
 
 ---
+
 In the second day, we started in the cafeteria 2nd floor's Astronomy Institute to share some ideas with different points of view for what is supposted to be the final reconstruction from what we heard and felt previously. As a group, whom starts a problem since the begining, we decided to present it for the Stars' night international festival for the 17th of november in differents resolutions or scales: as a main in the interstellar medium, as a pre cascade in the earth's atmosphere and post cascade in the HAWC Observatory, and as a particular periodistic way. 
 
-<img src="./captures/IMG_4432.jpg" width="285">
-<img src="./captures/IMG_4428.jpg" width="285">
-<img src="./captures/IMG_4433.jpg" width="285">
+||||
+|:---:|:---:|:---:|:---:|
+|<img src="./captures/IMG_4432.jpg" width="285">|<img src="./captures/IMG_4428.jpg" width="285">|<img src="./captures/IMG_4433.jpg" width="285">|
 
 In this photo my name appear with 'k' instead of 'c' and with '?', because at that time of the day I had to leave early the meeting. But definitely, I was agree with the idea about mapping the 39 gamma-ray sources using the galactic coordinates from the catalogue, because I decided to share with the community a sketch in which I'm recenlty working for my master's degree. And also, I was interested in the work proposed by Emilio and Marianne, about sending values through an Open Sound Control (OSC) Protocol cause it were a nice solution to integrate the work of everybody in a single presentation.
 
@@ -123,9 +120,10 @@ In this photo my name appear with 'k' instead of 'c' and with '?', because at th
 In the third day, we were ready to begin to sinthetyze the data. 
 
 <img src="./captures/IMG_4437.jpg" width="900">
-<img src="./captures/IMG_4446.jpg" width="285">
-<img src="./captures/IMG_4444.jpg" width="285">
-<img src="./captures/IMG_4449.jpg" width="285">
+
+||||
+|:---:|:---:|:---:|:---:|
+|<img src="./captures/IMG_4446.jpg" width="285">|<img src="./captures/IMG_4444.jpg" width="285">|<img src="./captures/IMG_4449.jpg" width="285">|
 
 So at next, I propose a guide which could probably help or agile the winnings for the project:
 
@@ -285,8 +283,9 @@ void oscEvent(OscMessage theOscMessage) {
 } //------------------------------------------------------------------------------------------------------ oscEvent
 ```
 
-<img src="./captures/IMG_4453.jpg" width="540">
-<img src="./captures/IMG_4459.jpg" width="310">
+|||
+|:---:|:---:|
+|<img src="./captures/IMG_4453.jpg" width="540">|<img src="./captures/IMG_4459.jpg" width="310">|
 
 #### 5. Implement an Interactive User-Interfaced to control the exploration of the visualization (pending).
 
@@ -316,9 +315,11 @@ There were certain suggested technology tools to handle the challenge for this p
 ### Presentation
 
 <img src="./captures/IMG_4475.jpg" width="900">
-<img src="./captures/IMG_4477.jpg" width="285">
-<img src="./captures/IMG_4478.jpg" width="285">
-<img src="./captures/IMG_4490.jpg" width="285">
+
+||||
+|:---:|:---:|:---:|
+|<img src="./captures/IMG_4477.jpg" width="285">|<img src="./captures/IMG_4478.jpg" width="285">|<img src="./captures/IMG_4490.jpg" width="285">|
+
 <img src="./captures/IMG_4501.jpg" width="900">
 
 [Go up](#Home)
