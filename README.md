@@ -70,7 +70,9 @@ In the first day, we were summoned by [Art, Science, and Technology's (ACT)](htt
 We were introduced to the observatory, and physics foundations with a talk from Dr. Magda González about _Cosmic ray as a messengers from the universe_, to adapt our thoughts to the domain language.  
 Most of chemical elements that represent Mendeleev's periodic table comes from out of the earth, in fact; certain elements have been produce from the human being activity. So we ask ourselfs, from where the hell comes all the matter?!
 
-<left><img src="./captures/IMG_4387.jpg" width="285"></left><center><img src="./captures/IMG_4388.jpg" width="285"></center><right><img src="./captures/IMG_4390.jpg" width="285"></right>
+|         |            |   |
+| :-------------: |:-------------:| :-----:|
+| <img src="./captures/IMG_4387.jpg" width="285">     | <img src="./captures/IMG_4388.jpg" width="285"> | <img src="./captures/IMG_4390.jpg" width="285"> |
 
 ---
 
