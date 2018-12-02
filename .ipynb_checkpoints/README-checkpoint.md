@@ -30,18 +30,14 @@ HAWC Observatory: [datasets](https://data.hawc-observatory.org/datasets.php)
 
 ## Introduction
 
-Each time of second, a certain gamma-ray particles that travels from the interstellar medium to earth's atmosphere, has been cascading our bodies. Perhaps, while we are reading this.
-
-At the beginning, these particles comes mostly from cosmic-ray sources, like; kilonovaes, pulsars, star collisions or galaxies' centers. When its hits in the atmosphere and interact with the atomic nuclei, elementary particles are produced, which turns it into more particles and generate a cascade effect. This showers of particles grows until all the energy of the original gamma-ray is totally used. You might imagine all this happening approximately at 10 km above sea level, and that could cover an area of even a 1,000 of square meters.
-
-So, [The High-Altitude Water Cherenkov (HAWC) Gamma-Ray Observatory](https://www.hawc-observatory.org/) attends this wonderful research on the [flanks](https://goo.gl/maps/c28eBSnLGy92) of the Sierra Negra volcano on Pico de Orizaba's (Citlaltépetl) National Park near from the beautiful city of Puebla in México. It implements a 140x180m territorial area with 300 cylindrical modules of 7.3x4.5m filled with 200,000L of purified water and three floating photomultiplier tubes (PMT) each. 
-
+Each time of second, a certain gamma-ray particles that travels from the interstellar medium to earth's atmosphere, has been cascading our bodies. Perhaps, while we are reading this.  
+At the beginning, these particles comes mostly from cosmic-ray sources, like; kilonovaes, pulsars, star collisions or galaxies' centers. When its hits in the atmosphere and interact with the atomic nuclei, elementary particles are produced, which turns it into more particles and generate a cascade effect. This showers of particles grows until all the energy of the original gamma-ray is totally used. You might imagine all this happening approximately at 10 km above sea level, and that could cover an area of even a 1,000 of square meters.  
+So, [The High-Altitude Water Cherenkov (HAWC) Gamma-Ray Observatory](https://www.hawc-observatory.org/) attends this wonderful research on the [flanks](https://goo.gl/maps/c28eBSnLGy92) of the Sierra Negra volcano on Pico de Orizaba's (Citlaltépetl) National Park near from the beautiful city of Puebla in México. It implements a 140x180m territorial area with 300 cylindrical modules of 7.3x4.5m filled with 200,000L of purified water and three floating photomultiplier tubes (PMT) each.  
 Now, When an elementary particle of the atmosphere cascade travels through the water, it produces a light pulse call Cherenkov radiation. This happens when charged electric particle travels faster than light in a medium like water. It is similar when at the poles of the planets experiences the auroras borealis or autralis, because of the protection role of the atmosphere from the higher levels of gamma-ray or radiation.
 
 <img src="./captures/Polarlicht_2.jpg" width="900">
 
-Thereby, the light pulses are detected by the photocathode material of the PMT which converts and multiply the signal from the photon particle into many electrons that sends an electricmagnetic pulse to 1,200 channels from 120 front-end boards in the observatory to process those into interpretable datasets and store onto tabular representations with the information about arrive time and cascade's size.
-
+Thereby, the light pulses are detected by the photocathode material of the PMT which converts and multiply the signal from the photon particle into many electrons that sends an electricmagnetic pulse to 1,200 channels from 120 front-end boards in the observatory to process those into interpretable datasets and store onto tabular representations with the information about arrive time and cascade's size.  
 Finally, through this information and the data from the 2HWC HAWC Observatory Gamma-Ray Catalogue, we intented to figure out its dimension from its domain to synthesize a qualitive form, that could reveals and amplify cognitive structures of cosmic ray's spectrum into an inferencial patterns system, which allows to reconstruct the direction from the original gamma-ray source and estimates its energy, through a based-computer simulation that visualize and sonorize its nature.
 
 [Go up](#Home)
@@ -70,15 +66,13 @@ The pictorical representation of the 39 Gamma-Ray sources from the 2nd HAWC Obse
 
 The process which describes the implementation of the prototypings starts as follows:
 
-In the first day, we were summoned by [Art, Science, and Technology's (ACT)](http://artecienciaytecnologias.mx/) program in the wild México City to attend a series of talks and workshops in the Astronomy Institute headquarters in UNAM during the 6th, 7th and 8th of november from 10-14h and from 16-18h. 
-
-We were introduced to the observatory, and physics foundations with a talk from Dr. Magda González about Cosmic ray as a messengers from the universe, to adapt our thoughts to the domain language. 
-
+In the first day, we were summoned by [Art, Science, and Technology's (ACT)](http://artecienciaytecnologias.mx/) program in the wild México City to attend a series of talks and workshops in the Astronomy Institute headquarters in UNAM during the 6th, 7th and 8th of november from 10-14h and from 16-18h.  
+We were introduced to the observatory, and physics foundations with a talk from Dr. Magda González about _Cosmic ray as a messengers from the universe_, to adapt our thoughts to the domain language.  
 Most of chemical elements that represent Mendeleev's periodic table comes from out of the earth, in fact; certain elements have been produce from the human being activity. So we ask ourselfs, from where the hell comes all the matter?!
 
-<img src="./captures/IMG_4387.jpg" width="285">
-<img src="./captures/IMG_4388.jpg" width="285">
-<img src="./captures/IMG_4390.jpg" width="285">
+<left><img src="./captures/IMG_4387.jpg" width="285"></left><center><img src="./captures/IMG_4388.jpg" width="285"></center><right><img src="./captures/IMG_4390.jpg" width="285"></right>
+
+---
 
 In a modern vision way, it looks likes that the fundamental particles, like quarks, electrons, neutrinos, muons, taus where ionized during the cooling and the acecelerate expanse of the universe since the Big bang. Once this particles became with a more complex structure, because of the gravity, the temperature and many other stuff, the firsts stars and galaxies started to bright.
 
