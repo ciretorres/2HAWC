@@ -31,14 +31,17 @@ HAWC Observatory: [datasets](https://data.hawc-observatory.org/datasets.php)
 ## Introduction
 
 Each time of second, a certain gamma-ray particles that travels from the interstellar medium to earth's atmosphere, has been cascading our bodies. While we are reading this, perhaps.  
-At the beginning, these particles comes mostly from cosmic-ray sources, like; kilonovaes, supernovaes, pulsars, stars' collisions or even galaxies' centers. When they hits in the atmosphere, they interact with the atomic nuclei, and elementary particles are produced, which turns it into more and more particles for generate a cascade effect. This showers of particles grows until all the energy of the original gamma-ray is totally used. You might imagine all this happening approximately at 10 km above sea level, and that could cover an area of even a 1,000 of square meters.  
+
+At the beginning, these particles comes mostly from cosmic-ray sources, like; kilonovaes, supernovaes, pulsars, stars' collisions or even galaxies' centers. When they hit in the atmosphere, they interact with the atomic nuclei and elementary particles are produced, which turns them into more particles to generate a cascade effect. This showers of particles grows until all the energy of the original gamma-ray is totally used. You might imagine all this happening approximately at 10 km above sea level, and that could cover an area of even a 1,000 of square meters.  
+
 So, [The High-Altitude Water Cherenkov (HAWC) Gamma-Ray Observatory](https://www.hawc-observatory.org/) attends this wonderful research on the [flanks](https://goo.gl/maps/c28eBSnLGy92) of the Sierra Negra volcano on Pico de Orizaba's (Citlaltépetl) National Park, near from the beautiful city of Puebla in México. It implements a 140x180m territorial area, with 300 cylindrical modules of 7.3x4.5m filled with 200,000L of purified water, and three floating photomultiplier tubes (PMT) for each one.  
-Now, when an elementary particle of the atmosphere cascade travels through the water, it produces a light pulse call _Cherenkov radiation_. This happens when an electric charged particle travels faster than light in a medium like water. It is similar when at the poles of the planets experiences the auroras borealis or autralis, because of the protection role of the atmosphere from the higher levels of gamma-ray or radiation.
+Now, when an elementary particle of the atmosphere cascade travels through the water, it produces a light pulse call _Cherenkov radiation_. This happens when an electric charged particle travels faster than light in a medium like water. It's similar when at the poles of the planets experiences the auroras borealis or autralis, because of the protection role of the atmosphere from the higher levels of gamma-ray or radiation.
 
 <img src="./captures/Polarlicht_2.jpg" width="900">
 
 Thereby, the light pulses are detected by a photocathode material of the PMT, which converts and multiply the signal from the photon particle into many electrons, and sends an electrocmagnetic pulse to 1,200 channels from 120 front-end boards in the observatory. The front-end boards processes those pulses into interpretable datasets store onto tabular representations with the information about arrive time and cascade's size.  
-Finally, through this information and the data from the 2HWC HAWC Observatory Gamma-Ray Catalogue, we intented to figure out the phenomena dimension from its domain to synthesize a qualitive form, that could reveals and amplify cognitive structures of cosmic ray's event into an inferencial pattern system, which allows Astronomers to reconstruct the direction from the original gamma-ray source, and estimates its energy through a based-computer simulation that visualize and sonorize its nature.
+
+Finally, through this information and the data from the 2HWC HAWC Observatory Gamma-Ray Catalogue, we intented to figure out the phenomena dimension from its domain to synthesize a qualitive form, that could reveals and amplify cognitive structures of cosmic ray's events into an inferencial pattern system, which allows Astronomers to reconstruct the direction from the original gamma-ray source, and estimates its energy through a based-computer simulation that visualize and sonorize its nature.
 
 [Go up](#Home)
 
@@ -77,11 +80,11 @@ So we ask ourselfs, from where the hell comes all the matter?!
 | :-------------: |:-------------:| :-----:|
 | <img src="./captures/IMG_4387.jpg" width="285"> | <img src="./captures/IMG_4388.jpg" width="285"> | <img src="./captures/IMG_4390.jpg" width="285"> |
 
-In a modern vision way, the fundamental particles, viz. quarks, electrons, neutrinos, muons, taus where ionized during the cooling and the acecelerate expanse of the universe since the Big bang. Once that these particles became with a more complex structure, because of gravity, heat and many other stuff, the first stars and galaxies started to bright.
+In a modern vision way, the fundamental particles, viz., quarks, electrons, neutrinos, muons, taus where ionized during the cooling and the acecelerate expanse of the universe since the Big bang. Once that these particles became with a more complex structure, because of gravity, heat and many other stuff, the first stars and galaxies started to bright.
 
 <img src="./captures/IMG_4391.jpg" width="900">
 
-After that, we jumped into a laboratory where they explained us how does it work, in general, the electronic system of the HAWC's Observatory. The most interest part, from my point of view, is when the Cherenkov's effect lights the photocathode in the tubes for photomultiply it into many electrons, which sends a signal to the engineering mechanisim, where a front-end board recieve these pulses and translate them into bitcode, and then process it with another machines-levels to get the data in a natural language.  
+After that, we jumped into a laboratory where they explained us how does it work, in general, the electronic system of the HAWC's Observatory. The most interest part, from my point of view, is when the Cherenkov's effect lights the photocathode in the tubes to photomultiply it into many electrons, which sends a signal to the engineering mechanisim, where a front-end board recieve these pulses and translate them into bitcode, and then process it with another machines-levels to get the data in a natural language.  
 
 |||||
 |:---:|:---:|:---:|:---:|
@@ -95,14 +98,15 @@ Next, we were on an underground laboratory where they showed us the purified qua
 
 At the end of the day, we had a nice exploration of the first Data Sets with Sergio Hernández, whom facilitated us the reading for each of the sets' parameters. For example, the 39 Gamma-Ray sources that allow them to plot the sky, or the maps from the observation significance of each source, or the lightcurves from Crab Nebulae, Markarian 421, and Markarian 501 from about 17 measuring months.  
 
-**Note:** The format of the data files is very important for the implementation of the project. In this case, the second catalogue is in `.xml` file, but Sergio provided us a program to convert it to `.csv` with python. The lightcurves are in `.dat` file, so with a kind actitude from my friend Emmanuel, we could solved the problem to reconstruct the data in a readable format for the environments that we wanted to use. There was a interested fact in the variables of this set, that Sergio helped us with the dates in which the transition from the fluctuation started and stopped recording. by converting the Modified Julian's Calendar to Gregorian's Calendar with some tricks from the Astropy.time module.  
+**Note:** The format of the data files is very important for the implementation of the project. In this case, the second catalogue is in `.xml` file, but Sergio provided us a program to convert it to `.csv` with python. The lightcurves are in `.dat` file, so with a kind actitude from my friend Emmanuel, we could solved the problem to reconstruct the data in a readable format for the environments that we wanted to use. There was a interested fact in the variables of this set, that Sergio helped us with the dates in which the transition from the fluctuation started and stopped recording. by converting the Modified Julian's Calendar to Gregorian's Calendar with some tricks from the `Astropy.time` module.  
+
 **Now, we were ready to ping some ideas with the community!**
 
 ||||
 |:---:|:---:|:---:|
 | <img src="./captures/IMG_4414.jpg" width="285"> | <img src="./captures/IMG_4416.jpg" width="285"> | <img src="./captures/IMG_4420.jpg" width="285"> |
 
-Finally, the mentors assigned to the mission, presented their portfolios with conceptual tools from the paradigms of programming languages, like, SuperCollider, Pure Data, VVVV, OpenFrameworks, and Processing. Which it is intended to specify this aspects forward.
+Finally, the mentors assigned to the mission, presented their portfolios with conceptual tools from the paradigms of programming languages, like; SuperCollider, Pure Data, VVVV, OpenFrameworks, and Processing. Which it is intended to specify this aspect forward.
 
 ---
 
@@ -134,14 +138,16 @@ Now, I propose a guide which could probably help or agile the winnings for the p
 
 ### 1. Check the database. 
 
-#### 1.1. Determine which variables from the tabular representation we need use to answer what we are looking for. Note: the data is recolected from the electromagnetic pulse which sends the PMT floating in every single one of the modules. 
+#### 1.1. Determine which variables from the tabular representation we need use to answer what we are looking for. 
+
+**Note:** the data is recolected from the electromagnetic pulse which sends the PMT floating in every single one of the modules. 
 
 #####  1.1.1. Pictorical and audio variables:
 
 - Name of the celestial source.
 - Galactical, ecuatorial and spherical coordinates.
 - Distance of the object in parsecs.
-- The transitory amplititude from the fluxtuation of the Crab Nebulae, Markarian 421, Markarian 501.
+- The transitory amplititude from the fluctuation of the Crab Nebulae, Markarian 421, Markarian 501.
 - Position of the camera inside the simulation.
 
 ### 2. Data analysis with python.
@@ -152,43 +158,32 @@ Now, I propose a guide which could probably help or agile the winnings for the p
 <img src="./captures/code_1.png" width="900">
         
 #### 2.2. Convert ecuatorial coords to spherical for positioning the 39 gamma-ray sources.  
-We had the opportunity to reach Carles and Sergio knowledge by explaining the meaning of galactical coordinates, and how to transformed them to a spherical system, with again, some tricks from the Astropy module.
+We had the opportunity to reach Carles and Sergio knowledge by explaining the meaning of galactical coordinates, and how to transformed them to a spherical system, with again, some tricks from the Astropy module.  
+We commonly agreed in define 200 parsecs of distance.
 
 <img src="./captures/IMG_4447.jpg" width="900">
 <img src="./captures/code_module.png" width="900">
 <img src="./captures/code_2.png" width="900">
+<img src="./captures/code_8.png" width="900">
 
-#### 2.3. Obtain the amplitude fluxtuation values from the lightcurves.
+#### 2.3. Obtain the amplitude fluxtuation values from the lightcurves to model the gamma-ray pulse.
 We need to reconstruct the tabular representation from the `.dat` file to export it to `.csv`. Thanks again to Emmanuel for his help!
 
 <img src="./captures/code_3.png" width="900">
+<img src="./captures/code_9.png" width="900">
 
 #### 2.4. Parse all the datasets with every tool (SuperCollider, Processing, OpenFrameworks).
 At the beginning, we had some troubles for shooting the `.csv` files, because of the way we need to call them in every environments.Then we needed to parse and assign them to the right data type. But we solved it!
+
+#### 2.5. Represent a gamma-ray sended from Crab Nebulae (pending).
+
+<img src="./captures/code_10.png" width="900">
 
 <img src="./captures/code_4.png" width="900">
 <img src="./captures/code_5.png" width="900">
 <img src="./captures/code_6.png" width="900">
 
-### 3. Paint or graphic from the data.
-
-#### 3.1. Plot a 3D sphere with Processing or OpenFrameworks.
-
-<img src="./captures/code_7.png" width="900">
-
-#### 3.2. Position the 39 gamma-ray sources in the sphere.
-
-<img src="./captures/code_8.png" width="900">
-
-#### 3.3. Model the sources with the transitory flux amplitude.
-
-<img src="./captures/code_9.png" width="900">
-
-#### 3.4. Represent a gamma-ray sended from Crab Nebulae (pending).
-
-<img src="./captures/code_10.png" width="900">
-
-### 4. Implement OSC Protocol for assign the strokeWeight from SuperCollider.
+### 3. Implement OSC Protocol for assign the strokeWeight from SuperCollider.
 In my case, I wanted to represent the amplitude fluxtuation from the sources by moving the strokeWeight's parameter depending from the values in the datasets. So, it is a good idea to integrate the local reconstructions by receiving a set of values from another platform through this protocol, which use the NetAddresses from the local devices to interchange data.
 
 ```
@@ -203,13 +198,6 @@ In my case, I wanted to represent the amplitude fluxtuation from the sources by 
     void setup() {
         /* Start oscP5, listening for incoming messages at port 12000 */
         oscP5 = new OscP5(this, 12000);  
-        /* myRemoteLocation is a NetAddress. a NetAddress takes 2 parameters,
-        * an ip address and a port number. myRemoteLocation is used as parameter in
-        * oscP5.send() when sending osc packets to another computer, device, 
-        * application. usage see below. for testing purposes the listening port
-        * and the port of the remote location address are the same, hence you will
-        * send messages back to this sketch.
-        */
 
         myRemoteLocation = new NetAddress("127.0.0.1", 12000); // Local
         //myRemoteLocation = new NetAddress("192.168.1.100", 5612); // Emilio
@@ -298,7 +286,7 @@ The OSC Protocol works by defining three patterns or tags, like `/crabSend`, `/m
 |:---:|:---:|
 |<img src="./captures/IMG_4453.jpg" width="540">|<img src="./captures/IMG_4459.jpg" width="310">|
 
-### 5. Implement an Interactive User-Interfaced to control the exploration of the visualization (pending).
+### 4. Implement an Interactive User-Interfaced to control the exploration of the visualization (pending).
 
 
 
@@ -308,7 +296,7 @@ The OSC Protocol works by defining three patterns or tags, like `/crabSend`, `/m
 
 ## Tools
 
-There were certain suggested technology tools to handle the challenge for the project. Meanwhile, some were interested in visualize the phenomena, and some were in sonorize it too. For that reason, I decided to visualize by using a graphic library based on Java programming language in an platform call Processing, and the data analysis I used the environment Jupyter Lab for Python language.
+There were certain suggested technology tools to handle the challenge for the project. Meanwhile, some were interested in visualize the phenomena, and some were in sonorize it too. For that reason, I decided to visualize it by using a graphic library based on Java programming language in an platform call [Processing](https://processing.org/), and the data analysis I used the environment [Jupyter Lab](https://jupyter.org/) for develop Python language.
 
 [Go up](#Home)
 
@@ -317,7 +305,7 @@ There were certain suggested technology tools to handle the challenge for the pr
 ## Rehearsal
 
 The rehearsal took place at _Los catorce 14_ two days before the presentation. We had the chance to critize our prototypes with a video projector and sound system. Just to get in touch with the rest of the work and how we were gonna organize the whole performance.  
-One of the ideas that I took from Emilio and Marianne, was about the experience they have to get in mind all the needs, requirements, and all the equipment to be move from our places to the forum or stage. It was a quite single!
+One of the ideas that I took from Emilio and Marianne, was about the experience that they have to get in mind all the needs, requirements, and all the equipment that must be move from our places to the forum or stage. It was a quite single!
 
 <img src="./captures/IMG_4465.jpg" width="900">
 <img src="./captures/IMG_4470.jpg" width="900">
@@ -328,7 +316,7 @@ One of the ideas that I took from Emilio and Marianne, was about the experience 
 
 ## Presentation
 
-It was the day! The team decided to test some specific aspects for live coding performance for having it ready at time. The presentation took place at _Las Islas_ in Ciudad Universitaria (UNAM) at 18h beside the main stage. It were a nice weather, and the crowd were satisfied!
+It was the day! The team decided to test some specific aspects for the live coding performance for having it ready at time. The presentation took place at _Las Islas_ in Ciudad Universitaria (UNAM) at 18h beside the main stage. It were a nice weather, and the crowd were satisfied!
 
 <img src="./captures/IMG_4475.jpg" width="900">
 
@@ -405,13 +393,13 @@ https://processing.org/
 
 https://en.wikipedia.org/wiki/Cherenkov_radiation
 
-[Hernández, Sergio. (2018). El Observatorio HAWC. Intituto de Física, UNAM: México.](https://github.com/ciretorres/2HAWC/blob/master/articles/Hernandez%20S_El%20Observatorio%20HAWC.pdf)
+[Hernández, Sergio. (2018). El Observatorio HAWC. Instituto de Física, UNAM: México.](https://github.com/ciretorres/2HAWC/blob/master/articles/Hernandez%20S_El%20Observatorio%20HAWC.pdf)
 
 [Hernández, Sergio. Data Sets I](https://github.com/ciretorres/2HAWC/blob/master/articles/Hernandez%20S_Data%20sets%20I.pdf)
 
 [Abeysekara et al. (2017). The 2HWC HAWC Observatory Gamma-Ray Catalogue. The Astrophysical Journal, 843:40 (21pp): México. ](https://doi.org/10.3847/1538-4357/aa7556)
 
-[Abeysekara et al. (). Very-high-energy particle acceleration powered by the jets of the microquasar SS 433. Springer Nature Limited: USA](https://doi.org/10.1038/s41586-018-0565-5)
+[Abeysekara et al. (2018). Very-high-energy particle acceleration powered by the jets of the microquasar SS 433. Springer Nature Limited: USA](https://doi.org/10.1038/s41586-018-0565-5)
 
 [Go up](#Home)
 
