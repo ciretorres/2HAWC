@@ -401,6 +401,8 @@ https://en.wikipedia.org/wiki/Cherenkov_radiation
 
 [Abeysekara et al. (2018). Very-high-energy particle acceleration powered by the jets of the microquasar SS 433. Springer Nature Limited: USA](https://doi.org/10.1038/s41586-018-0565-5)
 
+[Marciniak, Ryan. (2016). Where did the Elements Come From?](http://ryanmarciniak.com/archives/1627)
+
 [Go up](#Home)
 
 ---
