@@ -13,6 +13,10 @@ HAWC Observatory: [datasets](https://data.hawc-observatory.org/datasets.php)
 
 ---
 
+<video src="./captures/00_videos/2HAWC01.mov" width="800" controls></video>
+
+---
+
 ## Home
 
 - [Introduction](#Introduction)
