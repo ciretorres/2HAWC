@@ -13,7 +13,9 @@ HAWC Observatory: [datasets](https://data.hawc-observatory.org/datasets.php)
 
 ---
 
-<video src="./captures/00_videos/2HAWC01.mov" width="800" controls></video>
+## Watch the video
+
+[![Watch the video](https://img.youtube.com/vi/8cQ4oqXPvYg/0.jpg)](https://youtu.be/8cQ4oqXPvYg)
 
 ---
 
@@ -134,9 +136,15 @@ In the third day, we were ready to begin to synthetize the data. But first, we n
 
 <img src="./captures/IMG_4437.jpg" width="900">
 
+## Watch the video
+
+[![Watch the video](https://img.youtube.com/vi/kkqye-vL2F0/0.jpg)](https://youtu.be/kkqye-vL2F0)
+
 ||||
 |:---:|:---:|:---:|
 | <img src="./captures/IMG_4446.jpg" width="285"> |<img src="./captures/IMG_4444.jpg" width="285"> | <img src="./captures/IMG_4449.jpg" width="285"> |
+
+---
 
 Now, I propose a guide which could probably help or agile the winnings for the project:
 
@@ -313,6 +321,10 @@ One of the ideas that I took from Emilio and Marianne, was about the experience 
 
 <img src="./captures/IMG_4465.jpg" width="900">
 <img src="./captures/IMG_4470.jpg" width="900">
+
+## Watch the video
+
+[![Watch the video](https://img.youtube.com/vi/ioPncgdMvPE/0.jpg)](https://youtu.be/ioPncgdMvPE)
 
 [Go up](#Home)
 
