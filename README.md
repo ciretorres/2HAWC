@@ -198,7 +198,7 @@ At the beginning, we had some troubles for shooting the `.csv` files, because of
 ### 3. Implement OSC Protocol for assign the strokeWeight from SuperCollider.
 In my case, I wanted to represent the amplitude fluxtuation from the sources by moving the strokeWeight's parameter depending from the values in the datasets. So, it is a good idea to integrate the local reconstructions by receiving a set of values from another platform through this protocol, which use the NetAddresses from the local devices to interchange data.
 
-```
+```javascript
     OscP5 oscP5;
     NetAddress myRemoteLocation;
 

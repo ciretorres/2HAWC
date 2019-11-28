@@ -2,10 +2,10 @@ import peasy.*;
 import oscP5.*;
 import netP5.*;
 /*
- * Title: Hackatón 2018
+ * Title:
  * Authors: Eric Torres, Emilio Ocelotl, Marianne Teixido, Rodrigo Treviño.
- * Date: 14/11/2018 
- * Description: A visualization of 39 gamma-ray sources from the 2HAWC catalogue. 
+ * Update: 6/03/2019 
+ * Description: A 39 gamma-ray sources visualization from the 2HAWC catalogue for the 2018 Astronomy Hackathon. 
  * Reference: https://data.hawc-observatory.org/datasets/2hwc-survey/catalog.php
  */
 PeasyCam cam;
@@ -44,7 +44,8 @@ int opacity = 127;
 
 void setup() {
   //size(displayWidth, displayHeight, P3D);
-  size(600, 600, P3D);
+  //size(600, 600, P3D);
+  fullScreen(P3D);
   textFont(createFont("Futura", 30));
   textAlign(LEFT);
   colorMode(RGB);
